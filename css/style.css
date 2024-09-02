@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#calculating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  width: 300px;
+  padding-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+#calculating #display {
+  width: 100%;
+  border: 0;
+  line-height: 50px;
+  font-size: 3rem;
+  background: none;
+  text-align: right;
+  color: #fff;
+  font-weight: normal;
+}
+#calculating #display:focus {
+  outline: none;
+}
+#calculating .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#calculating .buttons.grid-2 {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+#calculating .buttons button {
+  height: 44px;
+  border: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  background: rgba(89, 89, 89, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+#calculating .buttons button.equal, #calculating .buttons button.clear {
+  background: rgba(89, 89, 89, 0.7);
+}
+#calculating .buttons button.operation {
+  background: #ffb700;
+}
